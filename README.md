@@ -6,3 +6,5 @@ Demonstrate how combining [State template files](https://helmfile.readthedocs.io
 $ helmfile -e development -f releases/release-a/helmfile.yaml lint
 in releases/release-a/helmfile.yaml: failed to read ../../env/environments.yaml: environment values file matching "development.yaml" does not exist in "."
 ```
+
+Solution: prevent using file relative reference in environments file, and use global values in sub-helmfiles.

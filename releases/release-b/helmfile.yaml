@@ -1,7 +1,15 @@
 bases:
   - ../../env/environments.yaml
 
+---
+
+values:
+  - "../../env/{{ .Environment.Name }}.yaml"
+
+---
+
 releases:
   - name: release-b
     chart: bitnami/mongodb
     version: 13.8.2
+    installed: {{ .Values.installed }}
