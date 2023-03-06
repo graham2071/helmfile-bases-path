@@ -1,0 +1,7 @@
+bases:
+  - ../../env/environments.yaml
+
+releases:
+  - name: release-b
+    chart: bitnami/mongodb
+    version: 13.8.2

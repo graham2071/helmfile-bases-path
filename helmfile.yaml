@@ -1,0 +1,5 @@
+bases:
+- env/environments.yaml
+
+helmfiles:
+- path: releases/*/helmfile.yaml

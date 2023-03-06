@@ -1,0 +1,7 @@
+environments:
+  development:
+    values: 
+      - development.yaml
+  production:
+    values:
+      - production.yaml
